@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="375.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.o7planning.javafx.MyController">
+   
+   <children>
+      <Button fx:id="myButton" layoutX="108.0" layoutY="119.0" mnemonicParsing="false" onAction="#showDateTime" prefHeight="25.0" prefWidth="125.0" text="Show Date Time" />
+      <TextField fx:id="myTextField" layoutX="96.0" layoutY="152.0" />
+      <TextField fx:id="myTextField2" layoutX="96.0" layoutY="188.0" />
+      <Circle fx:id="myCircle" fill="#1fffbd" layoutX="67.0" layoutY="63.0" onMouseClicked="#showMessage" radius="29.0" rotate="123.7" stroke="#e80e0e" strokeType="OUTSIDE">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor></Circle>
+      <TextField fx:id="myTextField3" layoutX="118.0" layoutY="34.0" />    
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.task.TaskViewController">
+	<padding>
+		<Insets top="25" right="25" bottom="25" left="25" />
+	</padding>
+	<columnConstraints>
+		<ColumnConstraints hgrow="NEVER" prefWidth="200.0"  />
+		<ColumnConstraints hgrow="NEVER" prefWidth="200.0"  />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints prefHeight="25" vgrow="NEVER" />
+		<RowConstraints prefHeight="25"  vgrow="NEVER" />
+		<RowConstraints prefHeight="25" vgrow="NEVER" />
+		<RowConstraints prefHeight="75" vgrow="NEVER" />
+		<RowConstraints prefHeight="25" vgrow="NEVER" />
+		<RowConstraints fillHeight="true" vgrow="ALWAYS" />
+	</rowConstraints>
+	<children>
+		<Label text="Name : " />
+		<TextField fx:id="nameTextField" GridPane.columnIndex="1" />
+		<Label text="Due Date : " GridPane.rowIndex="1" />
+		<DatePicker fx:id="dueDatePicker" GridPane.rowIndex="1"
+			GridPane.columnIndex="1"></DatePicker>
+		<Label text="Completed : " GridPane.rowIndex="2" />
+		<CheckBox fx:id="completedCheckBox" GridPane.rowIndex="2"
+			GridPane.columnIndex="1"></CheckBox>
+		<Label text="Details : " GridPane.rowIndex="3" />
+		<TextArea fx:id="detailsTextArea" GridPane.columnIndex="1"
+			GridPane.rowIndex="3" />
+
+		<Button mnemonicParsing="false" onAction="#save" text="Save"
+			GridPane.columnIndex="1" GridPane.rowIndex="4" />
+		<VBox fx:id="validationSummary" GridPane.rowIndex="5"
+			GridPane.columnSpan="2">
+		</VBox>
+	</children>
+</GridPane>
+	
+
+

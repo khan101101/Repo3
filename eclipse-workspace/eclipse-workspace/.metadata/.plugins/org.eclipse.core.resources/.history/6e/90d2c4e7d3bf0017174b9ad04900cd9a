@@ -1,0 +1,41 @@
+import java.util.*;
+public class KitenOnTree {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner myscanner = new Scanner(System.in);
+		/*
+		int k,a;
+		System.out.println("");
+		k = myscanner.nextInt();
+		
+		int array[] = new int[100];
+		
+		System.out.println("");
+		for(int i=0; i<array.length;i++) {
+			array[i] = myscanner.nextInt();
+		}
+		
+		System.out.println("array[] = " + Arrays.toString(array)); */
+		
+		ArrayList<Integer> name = new ArrayList <Integer>(); 
+		for (int i = 0; i< 5; i++) {
+		for(int j = 0; j<50; j+=5)
+		name.set(j, i);
+		}
+		int x = name.get(3);
+		System.out.println(x);
+	    
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

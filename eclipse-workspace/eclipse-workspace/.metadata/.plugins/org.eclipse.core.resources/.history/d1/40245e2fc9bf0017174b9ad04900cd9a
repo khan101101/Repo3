@@ -1,0 +1,47 @@
+import java.util.*;
+public class KitenOnTree {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner myscanner = new Scanner(System.in);
+		int k,a;
+		System.out.println("");
+		k = myscanner.nextInt();
+		
+		int array[] = new int[3];
+		int array1[] = new int[3];
+		int array2[] = new int[100];
+		int array3[] = new int[100];
+		int array4[] = new int[100];
+		int array5[] = new int[100];
+		int array6[] = new int[100];
+		int array7[] = new int[100];
+		int array8[] = new int[100];
+		int array9[] = new int[100];
+		int array10[] = new int[100];
+		System.out.println("");
+		for(int i=0; i<array.length;i++) {
+			array[i] = myscanner.nextInt();
+		}
+		
+		System.out.println("array[] = " + Arrays.toString(array)); 
+		
+		
+		System.out.println("");
+		for(int i =0; i<array1.length; i++) {
+			array1[i] = myscanner.nextInt();
+		}
+		System.out.println("array1[] = " + Arrays.toString(array1));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

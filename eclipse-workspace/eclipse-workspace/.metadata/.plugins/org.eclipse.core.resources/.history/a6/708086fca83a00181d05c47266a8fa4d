@@ -1,0 +1,24 @@
+
+public class AccessModifierPublic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		  private long time = 0;
+
+		    public long getTime() {
+		        return this.time;
+		    }
+
+		    public void setTime(long theTime) {
+		        this.time = theTime;
+		    }
+		
+		
+		
+		
+		
+		
+	}
+
+}

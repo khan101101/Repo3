@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="265.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.o7planning.javafx.Login_Controller">
+   <children>
+      <BorderPane layoutX="-262.0" layoutY="-287.0" prefHeight="267.0" prefWidth="268.0" />
+      <Button fx:id="myButton" layoutX="132.0" layoutY="40.0" mnemonicParsing="false" onAction="#action" text="click" />
+      <TextField fx:id="myTextField" layoutX="14.0" layoutY="102.0" />
+      <Circle fx:id="MyCircle" fill="DODGERBLUE" layoutX="225.0" layoutY="156.0" onDragDone="#drag" radius="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="TextField2" layoutX="97.0" layoutY="211.0" />
+   </children>
+</AnchorPane>

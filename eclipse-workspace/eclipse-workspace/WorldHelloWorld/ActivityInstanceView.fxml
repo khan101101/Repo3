@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+      <GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.activity.ActivityInstanceViewController" >
+    <padding>
+		<Insets top="25" right="25" bottom="25" left="25" />
+	</padding>
+	<columnConstraints>
+		<ColumnConstraints hgrow="ALWAYS" prefWidth="200.0"  />
+		<ColumnConstraints hgrow="ALWAYS" prefWidth="200.0" />
+		<ColumnConstraints hgrow="ALWAYS" prefWidth="200.0"  />
+	</columnConstraints>
+        <rowConstraints>
+          <RowConstraints prefHeight="25" vgrow="SOMETIMES"/>
+          <RowConstraints prefHeight="25" vgrow="SOMETIMES" />
+           <RowConstraints prefHeight="25" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="25" vgrow="SOMETIMES" />
+           <RowConstraints prefHeight="25" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="25" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+          <Label text="Name : " />
+      	  <Label fx:id="nameLabel"  GridPane.columnIndex="1" />
+      	  <Label text="Location : "  GridPane.rowIndex="1"/>
+      	  <Label fx:id="locationLabel"  GridPane.rowIndex="1" GridPane.columnIndex="1" />
+      	    <Label text="Start Date : "  GridPane.rowIndex="2"/>
+      	    <Label fx:id="startDateLabel"  GridPane.rowIndex="2" GridPane.columnIndex="1" />
+      	   <Label text="Start Time : "  GridPane.rowIndex="3"/>
+      	    <Label fx:id="startTimeLabel"  GridPane.rowIndex="3" GridPane.columnIndex="1" />
+      	    <Label text="Duration (mins) : "  GridPane.rowIndex="4"/>
+      	    <Label fx:id="durationLabel"  GridPane.rowIndex="4" GridPane.columnIndex="1" />
+      	     <Label text="Goal : "  GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+      	     <TextField fx:id="goalTextField"  GridPane.rowIndex="1"  GridPane.columnIndex="2" />
+      	     <Label text="Notes : "  GridPane.rowIndex="2"  GridPane.columnIndex="2" />
+      	    <TextArea fx:id="notesTextArea"  GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.columnIndex="2" />
+      	    
+      	   <Label GridPane.rowIndex="5" fx:id="messageLabel" GridPane.columnSpan="2"></Label>
+      	   <Button mnemonicParsing="false" onAction="#save"  text="Save" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      	  
+         </children>
+      </GridPane>
+
